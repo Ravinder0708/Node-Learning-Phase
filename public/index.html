@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Books Data</title>
+    <link href="/modules/bootstrap/dist/css/bootstrap.min.css">
+    </link>
+</head>
+<body>
+    <h1>Please fill data in the form below:</h1>
+    <form method="POST" action="/post-bookData">
+        <table border="1">
+            <tr>
+                <td>
+                    <label>Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="name" required autocomplete="off">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Edition:</label>
+                </td>
+                <td>
+                    <input type="text" name="edition" required autocomplete="off">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Year:</label>
+                </td>
+                <td>
+                    <input type="text" name="year" required autocomplete="off">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <a href="/view-bookData">View all books</a>
+    <script src="/modules/jquery/dist/jquery.min.js"></script>
+    <script src="/modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
